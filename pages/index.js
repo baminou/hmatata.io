@@ -6,7 +6,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import Bounce from 'react-reveal/Bounce';
 import Spin from 'react-reveal/Spin';
-
+import { prefix } from './prefix.js';
 import Zoom from 'react-reveal/Zoom';
 import ReactPlayer from 'react-player';
 import Particles from 'react-particles-js';
@@ -117,7 +117,7 @@ export default function Home() {
                       width: '100%',
                     }}
       />
-      <main id="home" className={styles.main}>
+      <main id="home" className={styles.main} style={{backgroundImage: `url("${prefix}/assets/bg1.png")` }}>
         <h3 className={"text-white"}>Hakuna Matata</h3>
         <Bounce>
           <h1 className={styles.title}>
