@@ -14,6 +14,7 @@ import { GiPrivateFirstClass } from 'react-icons/gi'
 import { GrLaunch } from 'react-icons/gr'
 import { FaStackExchange } from 'react-icons/fa'
 import { BsCurrencyExchange, BsBank } from 'react-icons/bs'
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
 
@@ -48,6 +49,11 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet"></link>
       </Head>
 
+      <NextSeo
+        title="Stake and Borrow | Hakuna Matata"
+        description="Start staking and borrowing at the same time with MATATAs. Join the first Metaverse Launchpad project."
+      />
+
       <Navbar style={{backgroundColor: "#8C1BF6"}} expand="lg"  >
         <Container className={"py-3"}>
           <Navbar.Brand href="#"><Image src={`${prefix}/assets/logo1.png`} width={200} alt={"Hakuna Matata's Logo"} /></Navbar.Brand>
@@ -63,7 +69,7 @@ export default function Home() {
               className="d-flex"
               navbarScroll
             >
-              <Nav.Link href="#action1">White Paper</Nav.Link>
+              <Nav.Link href={`${prefix}/assets/whitepaper.pdf`} target='_blank' rel='noopener noreferrer'>White Paper</Nav.Link>
               <Nav.Link href="#features">Features</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#roadmap">Roadmap</Nav.Link>
@@ -112,7 +118,9 @@ export default function Home() {
         </Zoom>
         <ButtonGroup className="my-3">
           <Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Join Pre-IDO</Button>
-          <Button className={"mx-2 rounded-button py-3 px-4"}  variant="flat-outline" size={"lg"}>White Paper</Button>
+          <a href={`${prefix}/assets/whitepaper.pdf`} target='_blank' rel='noopener noreferrer'>
+            <Button className={"mx-2 rounded-button py-3 px-4"}  variant="flat-outline" size={"lg"}>White Paper</Button>
+          </a>
         </ButtonGroup>
       </main>
       <Container style={{backgroundColor:"#8C1BF6", paddingTop: "5rem", paddingBottom: "5rem"}} fluid>
@@ -134,7 +142,7 @@ export default function Home() {
             </Bounce>
           </Col>
           <Col className={"d-flex align-items-stretch col-lg-3 col-md-6 col-12"}>
-              <Bounce left cascade>
+              <Bounce left>
                 <Card className={"rounded-card feature-card"}>
                   <Card.Body className={"p-4"}>
                     <Card.Title>Borrow against your stacked</Card.Title>
@@ -147,7 +155,7 @@ export default function Home() {
               </Bounce>
             </Col>
             <Col className={"d-flex align-items-stretch col-lg-3 col-md-6 col-12"}>
-            <Bounce left cascade>
+            <Bounce left>
               <Card className={"rounded-card feature-card"}>
                 <Card.Body className={"p-4"}>
                   <Card.Title>Metaverse Launchpad</Card.Title>
@@ -160,7 +168,7 @@ export default function Home() {
             </Bounce>
           </Col>
           <Col className={"d-flex align-items-stretch col-lg-3 col-md-6 col-12"}>
-            <Bounce left cascade>
+            <Bounce left>
               <Card className={"rounded-card feature-card"}>
                 <Card.Body className={"p-4"}>
                   <Card.Title>Deflationary Asset</Card.Title>
@@ -174,12 +182,17 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-      <Container className={"py-5"}>
+
+
+
+
+      
+      <Container>
         <Row className={"py-5 px-2"} id={"about"}>
           <h3 className={"text-center mt-5"}>Earn interest on your money</h3>
           <p className={"lead text-center mb-5 "}>Borrow against your Stacked MATATAs</p>
           <Col className={"d-flex justify-content-center"}>
-            <ReactPlayer url='https://player.vimeo.com/video/644037001?h=f838bef51b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' />
+            {/*<ReactPlayer url='https://player.vimeo.com/video/644037001?h=f838bef51b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' />*/}
           </Col>
           <Col className={"d-flex align-content-center flex-wrap"}>
             <Bounce>
@@ -191,45 +204,54 @@ export default function Home() {
                   </p>
                   <ButtonGroup className="my-3">
                   <Button className={"mx-2 rounded-button py-3 px-3"} variant="flat-primary" size={"md"}>Join Pre-IDO</Button>
-                  <Button className={"mx-2 rounded-button py-3 px-3"}  variant="flat-outline-dark" size={"md"}>White Paper</Button>
+                  <a href={`${prefix}/assets/whitepaper.pdf`} target='_blank' rel='noopener noreferrer'>
+                    <Button className={"mx-2 rounded-button py-3 px-3"}  variant="flat-outline-dark" size={"md"}>White Paper</Button>
+                  </a>
                 </ButtonGroup>
               </div>
             </Bounce>
           </Col>
         </Row>
       </Container>
+
       <Container style={{backgroundColor: "#fddfc0"}} fluid>
         <Row className={"py-5"}>
           <h2 id={"roadmap"} className={"text-center"}>Roadmap</h2>
           <p className={"lead text-center"}>This timeline details our funding and development goals.</p>
           <Col>
             <VerticalTimeline lineColor={"#8C1BF6"}>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ border:"1px solid #f68c1b", borderRadius: "30px", backgroundColor: "#f68c1b" }}
-                contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
-                date="Q3 2021 (Done)"
-                iconStyle={{ background: '#f68c1b', color: '#f68c1b' }}
-                icon={<GrGroup />}
-              >
-                <h3 className="vertical-timeline-element-title">Community Launch</h3>
-                <p>
-                  Building our community, Telegram, and Twitter to 1000 Members
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ border:"1px solid #f68c1b", borderRadius: "30px", backgroundColor: "#f68c1b" }}
-                contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
-                date="Q4 2021 (In progress)"
-                iconStyle={{ background: '#f68c1b', color: 'black' }}
-                icon={<GiPrivateFirstClass />}
-              >
-                <h3 className="vertical-timeline-element-title">Pre-IDO</h3>
-                <p>
-                  Private sale to Early investors, Team Building for Regional ambassador and Partnership with Strategic Investors
-                </p>
-              </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  contentStyle={{ border:"1px solid #f68c1b", borderRadius: "30px", backgroundColor: "#f68c1b" }}
+                  contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
+                  date="Q3 2021 (Done)"
+                  iconStyle={{ background: '#f68c1b', color: '#f68c1b' }}
+                  icon={<GrGroup />}
+                  visible={true}
+                >
+                  <Bounce>
+                    <h3>Community Launch</h3>
+                    <p>
+                      Building our community, Telegram, and Twitter to 1000 Members
+                    </p>
+                  </Bounce>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  contentStyle={{ border:"1px solid #f68c1b", borderRadius: "30px", backgroundColor: "#f68c1b" }}
+                  contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
+                  date="Q4 2021 (In progress)"
+                  iconStyle={{ background: '#f68c1b', color: 'black' }}
+                  icon={<GiPrivateFirstClass />}
+                  visible={true}
+                >
+                  <Bounce>
+                    <h3 className="vertical-timeline-element-title">Pre-IDO</h3>
+                    <p>
+                      Private sale to Early investors, Team Building for Regional ambassador and Partnership with Strategic Investors
+                    </p>
+                  </Bounce>
+                </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
@@ -237,11 +259,14 @@ export default function Home() {
                 date="Q4 2021 (Wait for it)"
                 iconStyle={{ background: '#8C1BF6', color: '#fff' }}
                 icon={<GrLaunch />}
+                visible={true}
               >
-                <h3 className="vertical-timeline-element-title">IEO and IDO launch</h3>
-                <p>
-                  Initial Exchange offering on Centralised exchanges and LaunchPads
-                </p>
+                <Bounce>
+                  <h3 className="vertical-timeline-element-title">IEO and IDO launch</h3>
+                  <p>
+                    Initial Exchange offering on Centralised exchanges and LaunchPads
+                  </p>
+                </Bounce>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -250,11 +275,14 @@ export default function Home() {
                 date="Q2 2022 (Wait for it)"
                 iconStyle={{ background: '#8C1BF6', color: '#fff' }}
                 icon={<BsCurrencyExchange />}
+                visible={true}
               >
-                <h3 className="vertical-timeline-element-title">CEX Listing</h3>
-                <p>
-                  Listing on centralized exchanges including but not limited to Bitmart, MEXC,…
-                </p>
+                <Bounce>
+                  <h3 className="vertical-timeline-element-title">CEX Listing</h3>
+                  <p>
+                    Listing on centralized exchanges including but not limited to Bitmart, MEXC,…
+                  </p>
+                </Bounce>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -263,12 +291,15 @@ export default function Home() {
                 date="Q1 2022 (Wait for it)"
                 iconStyle={{ background: '#8C1BF6', color: '#fff' }}
                 icon={<FaStackExchange />}
+                visible={true}
               >
-                <h3 className="vertical-timeline-element-title">Launching of Staking and Launchpad Platforms</h3>
-                <p>
-                  Launching of the staking platform and listing on DEX, (Pancake Swape).
-                  Marketing launch with Celebrities, Telegram, Twitter, Youtube, and Instagram Influencers.
-                </p>
+                <Bounce>
+                  <h3 className="vertical-timeline-element-title">Launching of Staking and Launchpad Platforms</h3>
+                  <p>
+                    Launching of the staking platform and listing on DEX, (Pancake Swape).
+                    Marketing launch with Celebrities, Telegram, Twitter, Youtube, and Instagram Influencers.
+                  </p>
+                </Bounce>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -277,11 +308,14 @@ export default function Home() {
                 date="Q3 2022 (Wait for it)"
                 iconStyle={{ background: '#8C1BF6', color: '#fff' }}
                 icon={<BsBank />}
+                visible={true}
               >
-                <h3 className="vertical-timeline-element-title">Lending feature Launch</h3>
-                <p>
-                  Launching of the Lending feature for Stakers to get a loan of up to 50% LTV of their Staked Token
-                </p>
+                <Bounce>
+                  <h3 className="vertical-timeline-element-title">Lending feature Launch</h3>
+                  <p>
+                    Launching of the Lending feature for Stakers to get a loan of up to 50% LTV of their Staked Token
+                  </p>
+                </Bounce>
               </VerticalTimelineElement>
             </VerticalTimeline>
           </Col>
@@ -300,7 +334,7 @@ export default function Home() {
               <Spin>
                 <SocialIcon className={"mx-1 text-center"} url="https://t.me/Matatacoin" network={"telegram"} />
               </Spin>
-              <Spin cascade>
+              <Spin>
                 <SocialIcon className={"mx-1"} url="https://twitter.com/HMatata2021" />
               </Spin>
             </div>
