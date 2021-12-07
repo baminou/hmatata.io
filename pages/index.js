@@ -190,14 +190,19 @@ export default function Home() {
       <Container>
         <Row className={"py-5 px-2"} id={"about"}>
           <h3 className={"text-center mt-5"}>Earn interest on your money</h3>
-          <p className={"lead text-center mb-5 "}>Borrow against your Stacked MATATAs</p>
-          <Col className={"d-flex justify-content-center"}>
-            {/*<ReactPlayer url='https://player.vimeo.com/video/644037001?h=f838bef51b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' />*/}
+          <p className={"lead text-center"}>Borrow against your Stacked MATATAs</p>
+          <Col className={"d-flex justify-content-center col-12 col-lg-6"}>
+            <ReactPlayer
+              url= 'assets/hmatata.mp4'
+              width='100%'
+              controls = {true}
+              previewTabIndex={1}
+              />
           </Col>
-          <Col className={"d-flex align-content-center flex-wrap"}>
+          <Col className={"d-flex align-content-center"}>
             <Bounce>
-              <div className={"py-2 px-2"}>
-                  <p style={{lineHeight: "200%"}}>
+              <div className={"py-3 px-2"}>
+                  <p style={{lineHeight: "175%"}}>
                   Stake your Matata and earn up to 150% interest, Claim your interest monthly for a steady income regardless of the market conditions.
         Leverage your Staked Matata to get a loan in USDT/BUSD of up to 50% of your Matata to maximize your profit or respond to an emergency need for money.
         With Matata, you are able to guarantee a better future for yourself and future generations by staking your MATATA you can earn tremendous interest on your money, borrow against your staked money and make optimum profit from the price appreciation
