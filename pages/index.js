@@ -388,7 +388,7 @@ export default function Home() {
                   <Card.Body>
                     <Card.Subtitle className={"text-center"}>Art and Creative Director</Card.Subtitle>
                     <Card.Title className={"text-center"}>Joshua Hyman</Card.Title>
-                    <Card.Link className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
+                    <Card.Link href={"https://www.linkedin.com/in/josh-h-54abbb8a/"} className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
                   </Card.Body>
                 </Card>
               </Bounce>
