@@ -193,7 +193,7 @@ export default function Home() {
           <p className={"lead text-center"}>Borrow against your Stacked MATATAs</p>
           <Col className={"d-flex justify-content-center col-12 col-lg-6"}>
             <ReactPlayer
-              url= 'assets/hmatata.mp4'
+              url= {`${prefix}/assets/hmatata.mp4`}
               width='100%'
               controls = {true}
               previewTabIndex={1}
