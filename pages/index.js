@@ -197,6 +197,7 @@ export default function Home() {
               width='100%'
               controls = {true}
               previewTabIndex={1}
+              light= {`${prefix}/assets/bg1.png`}
               />
           </Col>
           <Col className={"d-flex align-content-center"}>
