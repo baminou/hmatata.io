@@ -247,20 +247,6 @@ export default function Home() {
                 className="vertical-timeline-element--work"
                 contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
                 contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
-                date="Q1 2022 (Wait for it)"
-                iconStyle={{ background: '#8C1BF6', color: '#fff' }}
-                icon={<FaStackExchange />}
-              >
-                <h3 className="vertical-timeline-element-title">Launching of Staking and Launchpad Platforms, and DEX Listing</h3>
-                <p>
-                  Launching of the staking platform and listing on DEX, (Pancake Swape).
-                  Marketing launch with Celebrities, Telegram, Twitter, Youtube, and Instagram Influencers.
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
-                contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
                 date="Q2 2022 (Wait for it)"
                 iconStyle={{ background: '#8C1BF6', color: '#fff' }}
                 icon={<BsCurrencyExchange />}
@@ -268,6 +254,20 @@ export default function Home() {
                 <h3 className="vertical-timeline-element-title">CEX Listing</h3>
                 <p>
                   Listing on centralized exchanges including but not limited to Bitmart, MEXC,…
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
+                contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
+                date="Q1 2022 (Wait for it)"
+                iconStyle={{ background: '#8C1BF6', color: '#fff' }}
+                icon={<FaStackExchange />}
+              >
+                <h3 className="vertical-timeline-element-title">Launching of Staking and Launchpad Platforms</h3>
+                <p>
+                  Launching of the staking platform and listing on DEX, (Pancake Swape).
+                  Marketing launch with Celebrities, Telegram, Twitter, Youtube, and Instagram Influencers.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
