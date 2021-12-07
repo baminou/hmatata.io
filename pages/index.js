@@ -194,7 +194,7 @@ export default function Home() {
       <Container className={"py-5"}>
         <Row className={"py-5 px-2"} id={"about"}>
           <h3 className={"text-center mt-5"}>Earn interest on your money</h3>
-          <p className={"lead text-center mb-5"}>Borrow against your Stacked MATATAs</p>
+          <p className={"lead text-center mb-5 "}>Borrow against your Stacked MATATAs</p>
           <Col className={"d-flex justify-content-center"}>
             <ReactPlayer url='https://player.vimeo.com/video/644037001?h=f838bef51b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' />
           </Col>
