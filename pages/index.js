@@ -352,45 +352,55 @@ export default function Home() {
       </Container>
 
       <Container id={"team"} className={"my-5"}>
-        <Row>
+        <Row className={"px-1"}>
+          <Col>
           <h3 className={"text-center"}>Meet our team</h3>
           <p className={"lead text-center"}>Working on delivering the best products</p>
           <Carousel
             className={"px-2"}
-            swipeable={true}
+            swipeable={false}
             responsive={responsive}>
-              <Card className={"mx-2"} style={{borderRadius: "50px"}}>
-                <Card.Img src={`${prefix}/assets/emmanuel.png`} width={"100%"} style={{borderRadius: "30px"}} />
-                <Card.Body>
-                  <Card.Title>Emmanuel Tunda</Card.Title>
-                  <Card.Subtitle>CEO and Founder</Card.Subtitle>
-                </Card.Body>
-              </Card>
 
-            <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
-                <Card.Img src={`${prefix}/assets/brice.png`} width={"100%"} style={{borderRadius: "30px"}} />
-                <Card.Body>
-                  <Card.Title>Brice Aminou</Card.Title>
-                  <Card.Subtitle>Chief Technology Officer</Card.Subtitle>
-                </Card.Body>
-              </Card>
+              <Bounce>
+                <Card className={"mx-2"} style={{borderRadius: "50px"}}>
+                  <Card.Img src={`${prefix}/assets/emmanuel.png`} width={"100%"} style={{borderRadius: "30px"}} />
+                  <Card.Body>
+                    <Card.Title>Emmanuel Tunda</Card.Title>
+                    <Card.Subtitle>CEO and Founder</Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Bounce>
+              <Bounce>
+                <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
+                  <Card.Img src={`${prefix}/assets/brice.png`} width={"100%"} style={{borderRadius: "30px"}} />
+                  <Card.Body>
+                    <Card.Title>Brice Aminou</Card.Title>
+                    <Card.Subtitle>Chief Technology Officer</Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Bounce>
 
-            <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
-                <Card.Img src={`${prefix}/assets/josh.png`} width={"100%"} style={{borderRadius: "30px"}} />
-                <Card.Body>
-                  <Card.Title>Joshua Hyman</Card.Title>
-                  <Card.Subtitle>Art and Creative Director</Card.Subtitle>
-                </Card.Body>
-              </Card>
-
-            <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
-                <Card.Img src={`${prefix}/assets/avatar1.png`} width={"100%"} style={{borderRadius: "30px"}} />
-                <Card.Body>
-                  <Card.Title>Benedict Peters</Card.Title>
-                  <Card.Subtitle>Advisor</Card.Subtitle>
-                </Card.Body>
-              </Card>
+              <Bounce>
+                <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
+                  <Card.Img src={`${prefix}/assets/josh.png`} width={"100%"} style={{borderRadius: "30px"}} />
+                  <Card.Body>
+                    <Card.Title>Joshua Hyman</Card.Title>
+                    <Card.Subtitle>Art and Creative Director</Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Bounce>
+              
+              <Bounce>
+                <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
+                  <Card.Img src={`${prefix}/assets/avatar1.png`} width={"100%"} style={{borderRadius: "30px"}} />
+                  <Card.Body>
+                    <Card.Title>Benedict Peters</Card.Title>
+                    <Card.Subtitle>Advisor</Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Bounce>
           </Carousel>
+          </Col>
         </Row>
       </Container>
 
