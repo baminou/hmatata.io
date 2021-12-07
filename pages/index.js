@@ -12,7 +12,7 @@ import Particles from 'react-particles-js';
 import { GrGroup } from 'react-icons/gr';
 import { GiPrivateFirstClass } from 'react-icons/gi'
 import { GrLaunch } from 'react-icons/gr'
-import { FaStackExchange } from 'react-icons/fa'
+import { FaLinkedin, FaStackExchange } from 'react-icons/fa'
 import { BsCurrencyExchange, BsBank } from 'react-icons/bs'
 import { NextSeo } from 'next-seo';
 import Carousel from 'react-multi-carousel';
@@ -365,8 +365,9 @@ export default function Home() {
                 <Card className={"mx-2"} style={{borderRadius: "50px"}}>
                   <Card.Img src={`${prefix}/assets/emmanuel.png`} width={"100%"} style={{borderRadius: "30px"}} />
                   <Card.Body>
-                    <Card.Title>Emmanuel Tunda</Card.Title>
-                    <Card.Subtitle>CEO and Founder</Card.Subtitle>
+                    <Card.Subtitle className={"text-center"}>CEO and Founder</Card.Subtitle>
+                    <Card.Title className={"text-center"}>Emmanuel Tunda</Card.Title>
+                    <Card.Link href={"https://www.linkedin.com/in/emmanuel-theman"} className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
                   </Card.Body>
                 </Card>
               </Bounce>
@@ -374,8 +375,9 @@ export default function Home() {
                 <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
                   <Card.Img src={`${prefix}/assets/brice.png`} width={"100%"} style={{borderRadius: "30px"}} />
                   <Card.Body>
-                    <Card.Title>Brice Aminou</Card.Title>
-                    <Card.Subtitle>Chief Technology Officer</Card.Subtitle>
+                    <Card.Subtitle className={"text-center"}>Chief Technology Officer</Card.Subtitle>
+                    <Card.Title className={"text-center"}>Brice Aminou</Card.Title>
+                    <Card.Link href={"https://www.linkedin.com/in/brice-aminou/"} className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
                   </Card.Body>
                 </Card>
               </Bounce>
@@ -384,8 +386,9 @@ export default function Home() {
                 <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
                   <Card.Img src={`${prefix}/assets/josh.png`} width={"100%"} style={{borderRadius: "30px"}} />
                   <Card.Body>
-                    <Card.Title>Joshua Hyman</Card.Title>
-                    <Card.Subtitle>Art and Creative Director</Card.Subtitle>
+                    <Card.Subtitle className={"text-center"}>Art and Creative Director</Card.Subtitle>
+                    <Card.Title className={"text-center"}>Joshua Hyman</Card.Title>
+                    <Card.Link className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
                   </Card.Body>
                 </Card>
               </Bounce>
@@ -394,8 +397,9 @@ export default function Home() {
                 <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
                   <Card.Img src={`${prefix}/assets/avatar1.png`} width={"100%"} style={{borderRadius: "30px"}} />
                   <Card.Body>
-                    <Card.Title>Benedict Peters</Card.Title>
-                    <Card.Subtitle>Advisor</Card.Subtitle>
+                    <Card.Subtitle className={"text-center"}>Advisor</Card.Subtitle>
+                    <Card.Title className={"text-center"}>Benedict Peters</Card.Title>
+                    <Card.Link className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
                   </Card.Body>
                 </Card>
               </Bounce>
