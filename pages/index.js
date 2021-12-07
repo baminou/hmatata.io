@@ -15,10 +15,32 @@ import { GrLaunch } from 'react-icons/gr'
 import { FaStackExchange } from 'react-icons/fa'
 import { BsCurrencyExchange, BsBank } from 'react-icons/bs'
 import { NextSeo } from 'next-seo';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 export default function Home() {
 
   const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
   const ColoredLine = ({ color }) => (
     <div>
@@ -325,6 +347,54 @@ export default function Home() {
               </VerticalTimelineElement>
             </VerticalTimeline>
           </Col>
+        </Row>
+      </Container>
+
+      <Container className={"my-5"}>
+        <Row>
+          <h3 className={"text-center"}>Meet our team</h3>
+          <p className={"lead text-center"}>Working on delivering the best products</p>
+          <Carousel
+            className={"px-2"}
+            swipeable={true}
+            responsive={responsive}>
+            <Bounce>
+              <Card className={"mx-2"} style={{borderRadius: "50px"}}>
+                <Card.Img src={`${prefix}/assets/emmanuel.png`} width={"100%"} style={{borderRadius: "30px"}} />
+                <Card.Body>
+                  <Card.Title>Emmanuel Tunda</Card.Title>
+                  <Card.Subtitle>CEO and Founder</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Bounce>
+            <Bounce>
+            <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
+                <Card.Img src={`${prefix}/assets/brice.png`} width={"100%"} style={{borderRadius: "30px"}} />
+                <Card.Body>
+                  <Card.Title>Brice Aminou</Card.Title>
+                  <Card.Subtitle>Chief Technology Officer</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Bounce>
+            <Bounce>
+            <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
+                <Card.Img src={`${prefix}/assets/josh.png`} width={"100%"} style={{borderRadius: "30px"}} />
+                <Card.Body>
+                  <Card.Title>Joshua Hyman</Card.Title>
+                  <Card.Subtitle>Art and Creative Director</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Bounce>
+            <Bounce>
+            <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
+                <Card.Img src={`${prefix}/assets/avatar1.png`} width={"100%"} style={{borderRadius: "30px"}} />
+                <Card.Body>
+                  <Card.Title>Benedict Peters</Card.Title>
+                  <Card.Subtitle>Advisor</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Bounce>
+          </Carousel>
         </Row>
       </Container>
 
