@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Navbar, Button, Container, Nav, NavDropdown, Form, FormControl, ButtonGroup, Row, Col, Card, Image } from 'react-bootstrap';
+import { Navbar, Button, Container, Nav, ButtonGroup, Row, Col, Card, Image } from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -14,12 +14,9 @@ import { GiPrivateFirstClass } from 'react-icons/gi'
 import { GrLaunch } from 'react-icons/gr'
 import { FaStackExchange } from 'react-icons/fa'
 import { BsCurrencyExchange, BsBank } from 'react-icons/bs'
-import Loader from 'react-loader-spinner';
-import { useEffect, useState } from 'react';
 
 export default function Home() {
 
-  const [isLoading, setIsLoading] = useState(true);
   const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   const ColoredLine = ({ color }) => (
@@ -38,20 +35,6 @@ export default function Home() {
     </div>
   );
 
-  useEffect(() => {
-  }, []);
-
-  {/*return (
-    <Loader
-        type="MutatingDots"
-        color="#8C1BF6"
-        secondaryColor={"#f68c1b"}
-        height={100}
-        width={100}
-        timeout={3000} //3 secs
-      />
-  )*/}
-
   return (
     <div className={styles.container}>
       <Head>
@@ -67,7 +50,7 @@ export default function Home() {
 
       <Navbar style={{backgroundColor: "#8C1BF6"}} expand="lg"  >
         <Container className={"py-3"}>
-          <Navbar.Brand href="#"><Image src={"/assets/logo1.png"} width={200} alt={"Hakuna Matata's Logo"} /></Navbar.Brand>
+          <Navbar.Brand href="#"><Image src={`${prefix}/assets/logo1.png`} width={200} alt={"Hakuna Matata's Logo"} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -311,7 +294,7 @@ export default function Home() {
             <h3 id={"community"} className={"text-center text-white"}>Community</h3>
             <p className={"lead text-center text-white"}>Join our chat and follow us on Twitter</p>
             <div className={"text-center mb-5"}>
-              <Image src={"/assets/logo1.png"} alt={"Hakuna Matata's Logo"} />
+              <Image src={`${prefix}/assets/logo1.png`} alt={"Hakuna Matata's Logo"} />
             </div>
             <div className={"d-flex justify-content-center"}>
               <Spin>
