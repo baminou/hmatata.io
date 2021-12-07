@@ -95,6 +95,7 @@ export default function Home() {
               <Nav.Link href="#features">Features</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#roadmap">Roadmap</Nav.Link>
+              <Nav.Link href="#team">Team</Nav.Link>
               <Nav.Link href="#community">Community</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -350,7 +351,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container className={"my-5"}>
+      <Container id={"team"} className={"my-5"}>
         <Row>
           <h3 className={"text-center"}>Meet our team</h3>
           <p className={"lead text-center"}>Working on delivering the best products</p>
