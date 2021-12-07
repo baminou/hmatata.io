@@ -21,7 +21,6 @@ export default function Home() {
 
   const [isLoading, setIsLoading] = useState(true);
   const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  console.log(prefix)
 
   const ColoredLine = ({ color }) => (
     <div>
@@ -118,7 +117,7 @@ export default function Home() {
                       width: '100%',
                     }}
       />
-      <main id="home" className={styles.main} style={{backgroundImage: `url("/assets/bg1.png")` }}>
+      <main id="home" className={styles.main} style={{backgroundImage: `url("${prefix}/assets/bg1.png")` }}>
         <h3 className={"text-white"}>Hakuna Matata</h3>
         <Bounce>
           <h1 className={styles.title}>
