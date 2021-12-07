@@ -20,6 +20,8 @@ import { useEffect, useState } from 'react';
 export default function Home() {
 
   const [isLoading, setIsLoading] = useState(true);
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  console.log(prefix)
 
   const ColoredLine = ({ color }) => (
     <div>
