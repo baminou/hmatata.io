@@ -359,7 +359,6 @@ export default function Home() {
             className={"px-2"}
             swipeable={true}
             responsive={responsive}>
-            <Bounce>
               <Card className={"mx-2"} style={{borderRadius: "50px"}}>
                 <Card.Img src={`${prefix}/assets/emmanuel.png`} width={"100%"} style={{borderRadius: "30px"}} />
                 <Card.Body>
@@ -367,8 +366,7 @@ export default function Home() {
                   <Card.Subtitle>CEO and Founder</Card.Subtitle>
                 </Card.Body>
               </Card>
-            </Bounce>
-            <Bounce>
+
             <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
                 <Card.Img src={`${prefix}/assets/brice.png`} width={"100%"} style={{borderRadius: "30px"}} />
                 <Card.Body>
@@ -376,8 +374,7 @@ export default function Home() {
                   <Card.Subtitle>Chief Technology Officer</Card.Subtitle>
                 </Card.Body>
               </Card>
-            </Bounce>
-            <Bounce>
+
             <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
                 <Card.Img src={`${prefix}/assets/josh.png`} width={"100%"} style={{borderRadius: "30px"}} />
                 <Card.Body>
@@ -385,8 +382,7 @@ export default function Home() {
                   <Card.Subtitle>Art and Creative Director</Card.Subtitle>
                 </Card.Body>
               </Card>
-            </Bounce>
-            <Bounce>
+
             <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
                 <Card.Img src={`${prefix}/assets/avatar1.png`} width={"100%"} style={{borderRadius: "30px"}} />
                 <Card.Body>
@@ -394,7 +390,6 @@ export default function Home() {
                   <Card.Subtitle>Advisor</Card.Subtitle>
                 </Card.Body>
               </Card>
-            </Bounce>
           </Carousel>
         </Row>
       </Container>
