@@ -17,6 +17,7 @@ import { BsCurrencyExchange, BsBank } from 'react-icons/bs'
 import { NextSeo } from 'next-seo';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Script from 'next/script' 
 
 export default function Home() {
 
@@ -140,7 +141,7 @@ export default function Home() {
           <h4 className={"text-center"} style={{color: "#fddfc0"}}>Stake some MATATAs and borrow against your staked Matatas</h4>
         </Zoom>
         <ButtonGroup className="my-3">
-          <Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Join Pre-IDO</Button>
+          <a href="#community"><Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Join Pre-IDO</Button></a>
           <a href={`${prefix}/assets/whitepaper.pdf`} target='_blank' rel='noopener noreferrer'>
             <Button className={"mx-2 rounded-button py-3 px-4"}  variant="flat-outline" size={"lg"}>White Paper</Button>
           </a>
@@ -232,7 +233,7 @@ export default function Home() {
         With Matata, you are able to guarantee a better future for yourself and future generations by staking your MATATA you can earn tremendous interest on your money, borrow against your staked money and make optimum profit from the price appreciation
                   </p>
                   <ButtonGroup className="my-3">
-                  <Button className={"mx-2 rounded-button py-3 px-3"} variant="flat-primary" size={"md"}>Join Pre-IDO</Button>
+                  <a href="#community"><Button className={"mx-2 rounded-button py-3 px-3"} variant="flat-primary" size={"md"}>Join Pre-IDO</Button></a>
                   <a href={`${prefix}/assets/whitepaper.pdf`} target='_blank' rel='noopener noreferrer'>
                     <Button className={"mx-2 rounded-button py-3 px-3"}  variant="flat-outline-dark" size={"md"}>White Paper</Button>
                   </a>
@@ -399,7 +400,7 @@ export default function Home() {
                   <Card.Body>
                     <Card.Subtitle className={"text-center"}>Advisor</Card.Subtitle>
                     <Card.Title className={"text-center"}>Benedict Peters</Card.Title>
-                    <Card.Link className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
+                    <Card.Link href={"https://www.linkedin.com/in/benedict-peter-s-8a4484178/"} className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
                   </Card.Body>
                 </Card>
               </Bounce>
@@ -435,6 +436,21 @@ export default function Home() {
           Powered by Hakuna Matata
         </a>
       </footer>
+      <div>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-7RYGYP5QLR"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-7RYGYP5QLR');
+          `}
+        </Script>
+      </div>
     </div>
   )
 }
