@@ -21,7 +21,7 @@ import Script from 'next/script'
 
 export default function Home() {
 
-  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const prefix = '';
 
   const responsive = {
     superLargeDesktop: {
