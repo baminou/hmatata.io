@@ -420,7 +420,7 @@ export default function Home() {
                 <SocialIcon className={"mx-1 text-center"} url="https://t.me/Matatacoin" network={"telegram"} />
               </Spin>
               <Spin>
-                <SocialIcon className={"mx-1"} url="https://twitter.com/HMatata2021" />
+                <SocialIcon className={"mx-1"} url="https://twitter.com/HMatataOfficial" />
               </Spin>
             </div>
           </Col>
