@@ -83,3 +83,9 @@ a {
 .navbar-toggler-icon {
   border-color: #f68c1b !important;
 }
+
+
+.partners {
+  background-color: rgba(140, 27, 246, 0.6);
+  color: #fff;
+}

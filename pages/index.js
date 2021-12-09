@@ -242,7 +242,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container style={{backgroundColor: "#fddfc0"}} fluid>
+      <Container fluid>
         <Row className={"py-5"}>
           <h2 id={"roadmap"} className={"text-center"}>Roadmap</h2>
           <p className={"lead text-center"}>This timeline details our funding and development goals.</p>
@@ -346,6 +346,35 @@ export default function Home() {
                 </Bounce>
               </VerticalTimelineElement>
             </VerticalTimeline>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className={"py-5"} style={{ color: "#fff", backgroundSize: "cover", background: "linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(/assets/bg1.png)" }} fluid>
+        <Row className={"my-5"}>
+          <Col>
+              <h3 className={"text-center"}>Press articles</h3>
+              <p className={"lead text-center"}>They talk about us</p>
+              <div className={"text-center"}>
+                <Bounce>
+                  <a target={"_blank"} rel={"noreferrer"} href={"https://u.today/press-releases/hakuna-matata-launches-aims-to-simplify-problems"}><Image width={200} src={"/assets/utoday.jpeg"} /></a>
+                </Bounce>
+              </div>
+          </Col>
+        </Row>
+
+        <Row className={"my-5"}>
+          <Col>
+              <h3 className={"text-center"}>Partners</h3>
+              <p className={"lead text-center"}>Happy to work with our partners</p>
+              <div className={"text-center"}>
+                <Bounce>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://knowwealth.ca/"}><Image width={125} src={"/assets/kwi.png"} /></a>
+                </Bounce>
+                <Bounce>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://eboost.net.au/"}><Image width={250} src={"/assets/eboost.png"} /></a>
+                </Bounce>
+              </div>
           </Col>
         </Row>
       </Container>
