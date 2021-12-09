@@ -357,7 +357,10 @@ export default function Home() {
               <p className={"lead text-center"}>They talk about us</p>
               <div className={"text-center"}>
                 <Bounce>
-                  <a target={"_blank"} rel={"noreferrer"} href={"https://u.today/press-releases/hakuna-matata-launches-aims-to-simplify-problems"}><Image width={200} src={"/assets/utoday.jpeg"} /></a>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://u.today/press-releases/hakuna-matata-launches-aims-to-simplify-problems"}><Image width={200} src={"/assets/utoday.jpeg"} /></a>
+                </Bounce>
+                <Bounce>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://bitcoinist.com/hakuna-matata-unleashes-aims-to-glorify-living/"}><Image width={250} src={"/assets/bitcoinist.png"} /></a>
                 </Bounce>
               </div>
           </Col>
