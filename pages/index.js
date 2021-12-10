@@ -463,7 +463,7 @@ export default function Home() {
           <Col>
               <p class={"lead text-center"}>Audited by Solid Proof</p>
               <div className={"text-center"}>
-                <a href="https://github.com/solidproof/audit-certificates/blob/main/Audit_Certificate_MATATA.png"><Image width={150} src={"/assets/solidproof.png"} /></a>
+                <a href="https://github.com/solidproof/audit-certificates/blob/main/Audit_Certificate_MATATA.png"><Image alt={"Solid proog logo"} width={150} src={"/assets/solidproof.png"} /></a>
               </div>
           </Col>
         </Row>
