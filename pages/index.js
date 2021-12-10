@@ -461,7 +461,7 @@ export default function Home() {
       <Container className={"py-5"}>
         <Row>
           <Col>
-              <p class={"lead text-center"}>Audited by Solid Proof</p>
+              <p className={"lead text-center"}>Audited by Solid Proof</p>
               <div className={"text-center"}>
                 <a href="https://github.com/solidproof/audit-certificates/blob/main/Audit_Certificate_MATATA.png"><Image alt={"Solid proog logo"} width={150} src={"/assets/solidproof.png"} /></a>
               </div>
