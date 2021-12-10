@@ -357,19 +357,19 @@ export default function Home() {
               <p className={"lead text-center"}>They talk about us</p>
               <div className={"text-center"}>
                 <Bounce>
-                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://u.today/press-releases/hakuna-matata-launches-aims-to-simplify-problems"}><Image width={200} src={"/assets/utoday.jpeg"} /></a>
+                  <a className={"mx-3 my-3"} target={"_blank"} rel={"noreferrer"} href={"https://u.today/press-releases/hakuna-matata-launches-aims-to-simplify-problems"}><Image className={"py-3"} width={200} src={"/assets/utoday.jpeg"} /></a>
                 </Bounce>
                 <Bounce>
-                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://bitcoinist.com/hakuna-matata-unleashes-aims-to-glorify-living/"}><Image width={250} src={"/assets/bitcoinist.png"} /></a>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://bitcoinist.com/hakuna-matata-unleashes-aims-to-glorify-living/"}><Image className={"py-3"} width={250} src={"/assets/bitcoinist.png"} /></a>
                 </Bounce>
                 <Bounce>
-                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.nasdaq.com/press-release/hakuna-matata-begins-the-journey-aims-to-empower-humanity-2021-12-10"}><Image width={250} src={"/assets/nasdaq.png"} /></a>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.nasdaq.com/press-release/hakuna-matata-begins-the-journey-aims-to-empower-humanity-2021-12-10"}><Image className={"py-3"} width={250} src={"/assets/nasdaq.png"} /></a>
                 </Bounce>
                 <Bounce>
-                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://finance.yahoo.com/news/hakuna-matata-begins-journey-aims-125100418.html"}><Image width={250} src={"/assets/yahoo.png"} /></a>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://finance.yahoo.com/news/hakuna-matata-begins-journey-aims-125100418.html"}><Image className={"py-3"} width={250} src={"/assets/yahoo.png"} /></a>
                 </Bounce>
                 <Bounce>
-                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.bloomberg.com/press-releases/2021-12-10/hakuna-matata-begins-the-journey-aims-to-empower-humanity"}><Image width={250} src={"/assets/bloomberg.png"} /></a>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.bloomberg.com/press-releases/2021-12-10/hakuna-matata-begins-the-journey-aims-to-empower-humanity"}><Image className={"py-3"} width={250} src={"/assets/bloomberg.png"} /></a>
                 </Bounce>
               </div>
           </Col>
