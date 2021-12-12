@@ -374,6 +374,9 @@ export default function Home() {
                 <Bounce>
                   <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.newsbtc.com/press-releases/hakuna-matata-set-sights-on-simplifying-the-art-of-living/"}><Image className={"py-3"} width={250} src={"/assets/newsbtc.png"} /></a>
                 </Bounce>
+                <Bounce>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.investing.com/news/cryptocurrency-news/hakuna-matata--set-sights-on-simplifying-the-art-of-living-2708677"}><Image className={"py-3"} width={250} src={"/assets/investing.png"} /></a>
+                </Bounce>
               </div>
           </Col>
         </Row>
