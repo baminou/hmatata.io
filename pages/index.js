@@ -139,7 +139,7 @@ export default function Home() {
           <h4 className={"text-center"} style={{color: "#fddfc0"}}>Stake some MATATAs and borrow against your staked Matatas</h4>
         </Zoom>
         <ButtonGroup className="my-3">
-          <a href="https://www.pinksale.finance/#/launchpad/0x6449a4F5Ed674d29766BDdeeB9d80C910acA4692?chain=BSC"><Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Buy Now</Button></a>
+          <a href="https://www.pinksale.finance/#/launchpad/0x2c56b63A6220aD8089bdbcC67b89C7D51FF9428B?chain=BSC"><Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Buy Now</Button></a>
           <a href={`${prefix}/assets/whitepaper.pdf`} target='_blank' rel='noopener noreferrer'>
             <Button className={"mx-2 rounded-button py-3 px-4"}  variant="flat-outline" size={"lg"}>White Paper</Button>
           </a>
