@@ -231,7 +231,7 @@ export default function Home() {
         With Matata, you are able to guarantee a better future for yourself and future generations by staking your MATATA you can earn tremendous interest on your money, borrow against your staked money and make optimum profit from the price appreciation
                   </p>
                   <ButtonGroup className="my-3">
-                  <a href="https://www.pinksale.finance/#/launchpad/0x6449a4F5Ed674d29766BDdeeB9d80C910acA4692?chain=BSC"><Button className={"mx-2 rounded-button py-3 px-3"} variant="flat-primary" size={"md"}>Buy Now</Button></a>
+                  <a href="https://www.pinksale.finance/#/launchpad/0x2c56b63A6220aD8089bdbcC67b89C7D51FF9428B?chain=BSC"><Button className={"mx-2 rounded-button py-3 px-3"} variant="flat-primary" size={"md"}>Buy Now</Button></a>
                   <a href={`${prefix}/assets/whitepaper.pdf`} target='_blank' rel='noopener noreferrer'>
                     <Button className={"mx-2 rounded-button py-3 px-3"}  variant="flat-outline-dark" size={"md"}>White Paper</Button>
                   </a>
