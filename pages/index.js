@@ -300,7 +300,7 @@ export default function Home() {
                 className="vertical-timeline-element--work"
                 contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
                 contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
-                date="Q2 2022 (Wait for it)"
+                date="Q1 2022 (Wait for it)"
                 iconStyle={{ background: '#8C1BF6', color: '#fff' }}
                 icon={<BsCurrencyExchange />}
                 visible={true}
@@ -316,7 +316,7 @@ export default function Home() {
                 className="vertical-timeline-element--work"
                 contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
                 contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
-                date="Q1 2022 (Wait for it)"
+                date="Q2 2022 (Wait for it)"
                 iconStyle={{ background: '#8C1BF6', color: '#fff' }}
                 icon={<FaStackExchange />}
                 visible={true}
