@@ -18,6 +18,7 @@ import { NextSeo } from 'next-seo';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Script from 'next/script' 
+import Vimeo from '@u-wave/react-vimeo';
 
 export default function Home() {
 
@@ -470,6 +471,15 @@ export default function Home() {
                 <SocialIcon className={"mx-1"} url="https://twitter.com/HMatataOfficial" />
               </Spin>
             </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col className={"d-flex justify-content-center"}>
+            <Vimeo
+              video="657668142"
+              autoplay
+              className={"mt-5"}
+            />
           </Col>
         </Row>
       </Container>
