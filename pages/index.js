@@ -283,10 +283,10 @@ export default function Home() {
                 </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
+                contentStyle={{ border:"1px solid #f68c1b", borderRadius: "30px", backgroundColor: "#f68c1b" }}
                 contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
-                date="Q4 2021 (Wait for it)"
-                iconStyle={{ background: '#8C1BF6', color: '#fff' }}
+                date="Q4 2021"
+                iconStyle={{ background: '#f68c1b', color: '#fff' }}
                 icon={<GrLaunch />}
                 visible={true}
               >
@@ -301,7 +301,7 @@ export default function Home() {
                 className="vertical-timeline-element--work"
                 contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
                 contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
-                date="Q1 2022 (Wait for it)"
+                date="Q1 2022 (In progress)"
                 iconStyle={{ background: '#8C1BF6', color: '#fff' }}
                 icon={<BsCurrencyExchange />}
                 visible={true}
@@ -422,7 +422,7 @@ export default function Home() {
                 <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
                   <Card.Img src={`${prefix}/assets/brice.png`} width={"100%"} style={{borderRadius: "30px"}} />
                   <Card.Body>
-                    <Card.Subtitle className={"text-center"}>Chief Technology Officer</Card.Subtitle>
+                    <Card.Subtitle className={"text-center"}>Consultant</Card.Subtitle>
                     <Card.Title className={"text-center"}>Brice Aminou</Card.Title>
                     <Card.Link href={"https://www.linkedin.com/in/brice-aminou/"} className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
                   </Card.Body>
@@ -433,7 +433,7 @@ export default function Home() {
                 <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
                   <Card.Img src={`${prefix}/assets/josh.png`} width={"100%"} style={{borderRadius: "30px"}} />
                   <Card.Body>
-                    <Card.Subtitle className={"text-center"}>Art and Creative Director</Card.Subtitle>
+                    <Card.Subtitle className={"text-center"}>Consultant</Card.Subtitle>
                     <Card.Title className={"text-center"}>Joshua Hyman</Card.Title>
                     <Card.Link href={"https://www.linkedin.com/in/josh-h-54abbb8a/"} className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
                   </Card.Body>
