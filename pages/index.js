@@ -61,7 +61,7 @@ export default function Home() {
   );
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{backgroundColor: "#000000",color:"#fff"}}>
       <Head>
         <link rel="icon" href="/assets/logo2.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
@@ -76,9 +76,9 @@ export default function Home() {
         description="Start staking and borrowing at the same time with MATATAs. Join the first Metaverse Launchpad project."
       />
 
-      <Navbar style={{backgroundColor: "#8C1BF6"}} expand="lg"  >
+      <Navbar style={{backgroundColor: "#000000"}} expand="lg"  className='navbar' >
         <Container className={"py-3"}>
-          <Navbar.Brand href="#"><Image src={`${prefix}/assets/logo1.png`} width={200} alt={"Hakuna Matata's Logo"} /></Navbar.Brand>
+          <Navbar.Brand href="#"><Image src={`${prefix}/assets/logoMatata2.png`} width={200} alt={"Hakuna Matata's Logo"} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -95,7 +95,7 @@ export default function Home() {
               <Nav.Link href="#features">Features</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#roadmap">Roadmap</Nav.Link>
-              <Nav.Link href="#team">Team</Nav.Link>
+              
               <Nav.Link href="#community">Community</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -129,24 +129,25 @@ export default function Home() {
                       width: '100%',
                     }}
       />
-      <main id="home" className={styles.main} style={{backgroundImage: `url("${prefix}/assets/bg1.png")` }}>
-        <h3 className={"text-white"}>Hakuna Matata</h3>
+      <main id="home" className={styles.main} style={{backgroundImage: `url("${prefix}/assets/logVideo3.gif")` }}>
+      
         <Bounce>
           <h1 className={styles.title}>
-            Earn up to 150% APR
+            Earn up to 150% APY
           </h1>
         </Bounce>
         <Zoom delay={200}>
-          <h4 className={"text-center"} style={{color: "#fddfc0"}}>Stake some MATATAs and borrow against your staked Matatas</h4>
+          <h4 className={"text-center"} style={{color: "#fddfc0"}}>Stake MATATA to earn up to 150% and Borrow up to 50% of your Stake Value in BUSD</h4>
         </Zoom>
         <ButtonGroup className="my-3">
           <a href="https://pancakeswap.finance/swap?outputCurrency=0xeEb97934F49E1Ef58FD29DF20d065a437D7C9f56"><Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Buy Now</Button></a>
-          <a href={`${prefix}/assets/whitepaper.pdf`} target='_blank' rel='noopener noreferrer'>
-            <Button className={"mx-2 rounded-button py-3 px-4"}  variant="flat-outline" size={"lg"}>White Paper</Button>
-          </a>
+          <a href="http://127.0.0.1:5500/matata/index.html"><Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Stake Now</Button></a>
+          <a href="http://127.0.0.1:5500/matata/lending/index.html"><Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Borrow Now</Button></a>
+         
+ 
         </ButtonGroup>
       </main>
-      <Container style={{backgroundColor:"#8C1BF6", paddingTop: "5rem", paddingBottom: "5rem"}} fluid>
+      <Container style={{backgroundColor:"#000000", paddingTop: "5rem", paddingBottom: "5rem"}} fluid>
         <Row className={"px-3"} id={"features"}>
           <h2 className={"text-center text-white"}>Be your own bank</h2>
           <p className={"lead text-center text-white"}>Reasons to join Matata</p>
@@ -159,6 +160,7 @@ export default function Home() {
                   <Card.Subtitle className="mb-2 text-muted">Build generational wealth</Card.Subtitle>
                   <Card.Text>
                     The more you stake, the higher your Interest, the more we burn, the lesser there is on the market
+                    <br/><br/>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -171,7 +173,7 @@ export default function Home() {
                     <Card.Title>Borrow against your stacked</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">50% LTV</Card.Subtitle>
                     <Card.Text>
-                      You can get up to 50% LTV of your Staked MATATA as a loan in stable coins (USDT) Repayable any time.
+                      Get up to 50% LTV of your Staked MATATA as a loan in stable coins (USDT) Repayable any time.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -210,13 +212,13 @@ export default function Home() {
 
 
       
-      <Container>
+      <Container style={{backgroundColor: "#000000",color:"#fff"}}>
         <Row className={"py-5 px-2"} id={"about"}>
           <h3 className={"text-center mt-5"}>Earn interest on your money</h3>
           <p className={"lead text-center"}>Borrow against your Stacked MATATAs</p>
           <Col className={"d-flex justify-content-center col-12 col-lg-6"}>
             <ReactPlayer
-              url= {`${prefix}/assets/hmatata.mp4`}
+              url= {`${prefix}/assets/hmatata2.mp4`}
               width='100%'
               controls = {true}
               previewTabIndex={1}
@@ -248,13 +250,13 @@ export default function Home() {
           <h2 id={"roadmap"} className={"text-center"}>Roadmap</h2>
           <p className={"lead text-center"}>This timeline details our funding and development goals.</p>
           <Col>
-            <VerticalTimeline lineColor={"#8C1BF6"}>
+            <VerticalTimeline lineColor={"#C6A148"}>
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  contentStyle={{ border:"1px solid #f68c1b", borderRadius: "30px", backgroundColor: "#f68c1b" }}
+                  contentStyle={{ border:"1px solid #C6A148", borderRadius: "30px", backgroundColor: "#C6A148" }}
                   contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
                   date="Q3 2021 (Done)"
-                  iconStyle={{ background: '#f68c1b', color: '#f68c1b' }}
+                  iconStyle={{ background: '#C6A148', color: '#fff' }}
                   icon={<GrGroup />}
                   visible={true}
                 >
@@ -267,10 +269,10 @@ export default function Home() {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  contentStyle={{ border:"1px solid #f68c1b", borderRadius: "30px", backgroundColor: "#f68c1b" }}
-                  contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
-                  date="Q4 2021 (In progress)"
-                  iconStyle={{ background: '#f68c1b', color: 'black' }}
+                  contentStyle={{ border:"1px solid #C6A148", borderRadius: "30px", backgroundColor: "#C6A148" }}
+                  contentArrowStyle={{ borderRight: '7px solid #C6A148' }}
+                  date="Q4 2021 (Done)"
+                  iconStyle={{ background: '#C6A148', color: '#fff' }}
                   icon={<GiPrivateFirstClass />}
                   visible={true}
                 >
@@ -283,10 +285,10 @@ export default function Home() {
                 </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ border:"1px solid #f68c1b", borderRadius: "30px", backgroundColor: "#f68c1b" }}
-                contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
+                contentStyle={{ border:"1px solid #C6A148", borderRadius: "30px", backgroundColor: "#C6A148" }}
+                contentArrowStyle={{ borderRight: '7px solid #C6A148' }}
                 date="Q4 2021"
-                iconStyle={{ background: '#f68c1b', color: '#fff' }}
+                iconStyle={{ background: '#C6A148', color: '#fff' }}
                 icon={<GrLaunch />}
                 visible={true}
               >
@@ -297,12 +299,13 @@ export default function Home() {
                   </p>
                 </Bounce>
               </VerticalTimelineElement>
+                    
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
-                contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
-                date="Q1 2022 (In progress)"
-                iconStyle={{ background: '#8C1BF6', color: '#fff' }}
+                contentStyle={{ border:"2px solid #C6A148", borderRadius: "30px", backgroundColor: "#C6A148"}}
+                contentArrowStyle={{ borderRight: '7px solid #C6A148' }}
+                date="Q1 2022 (Done)"
+                iconStyle={{ background: '#C6A148', color: '#fff' }}
                 icon={<BsCurrencyExchange />}
                 visible={true}
               >
@@ -315,14 +318,14 @@ export default function Home() {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
-                contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
-                date="Q2 2022 (Wait for it)"
-                iconStyle={{ background: '#8C1BF6', color: '#fff' }}
+                contentStyle={{ border:"2px solid #C6A148", borderRadius: "30px",backgroundColor: "#C6A148" }}
+                contentArrowStyle={{ borderRight: '7px solid #C6A148' }}
+                date="Q2 2022 (In Progress)"
+                iconStyle={{ background: '#C6A148', color: '#fff' }}
                 icon={<FaStackExchange />}
                 visible={true}
               >
-                <Bounce>
+                <Bounce >
                   <h3 className="vertical-timeline-element-title">Launching of Staking and Launchpad Platforms</h3>
                   <p>
                     Launching of the staking platform and listing on DEX, (Pancake Swape).
@@ -332,10 +335,10 @@ export default function Home() {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ border:"2px solid #f68c1b", borderRadius: "30px" }}
-                contentArrowStyle={{ borderRight: '7px solid #f68c1b' }}
+                contentStyle={{ border:"2px solid #C6A148", borderRadius: "30px",backgroundColor: "#C6A148" }}
+                contentArrowStyle={{ borderRight: '7px solid #C6A148' }}
                 date="Q3 2022 (Wait for it)"
-                iconStyle={{ background: '#8C1BF6', color: '#fff' }}
+                iconStyle={{ background: '#C6A148', color: '#fff' }}
                 icon={<BsBank />}
                 visible={true}
               >
@@ -351,7 +354,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container className={"py-5"} style={{ color: "#fff", backgroundSize: "cover", background: "linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(/assets/bg1.png)" }} fluid>
+      <Container className={"py-5"} style={{ color: "#fff", backgroundSize: "cover", background: " url(/assets/logoVideo3.png)" }} fluid>
         <Row className={"my-5"}>
           <Col>
               <h3 className={"text-center"}>Press articles</h3>
@@ -363,6 +366,7 @@ export default function Home() {
                 <Bounce>
                   <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://bitcoinist.com/hakuna-matata-unleashes-aims-to-glorify-living/"}><Image className={"py-3"} width={250} src={"/assets/bitcoinist.png"} /></a>
                 </Bounce>
+                
                 <Bounce>
                   <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.nasdaq.com/press-release/hakuna-matata-begins-the-journey-aims-to-empower-humanity-2021-12-10"}><Image className={"py-3"} width={250} src={"/assets/nasdaq.png"} /></a>
                 </Bounce>
@@ -375,130 +379,66 @@ export default function Home() {
                 <Bounce>
                   <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.newsbtc.com/press-releases/hakuna-matata-set-sights-on-simplifying-the-art-of-living/"}><Image className={"py-3"} width={250} src={"/assets/newsbtc.png"} /></a>
                 </Bounce>
-                <Bounce>
-                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.investing.com/news/cryptocurrency-news/hakuna-matata--set-sights-on-simplifying-the-art-of-living-2708677"}><Image className={"py-3"} width={250} src={"/assets/investing.png"} /></a>
-                </Bounce>
+              
+
+           
+
+              
               </div>
           </Col>
         </Row>
 
         <Row className={"my-5"}>
           <Col>
-              <h3 className={"text-center"}>Partners</h3>
+              <h3 className={"text-center"}>Partners and Integrations</h3>
               <p className={"lead text-center"}>Happy to work with our partners</p>
               <div className={"text-center"}>
-                <Bounce>
-                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://knowwealth.ca/"}><Image width={125} src={"/assets/kwi.png"} /></a>
-                </Bounce>
+                
                 <Bounce>
                   <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://eboost.net.au/"}><Image width={250} src={"/assets/eboost.png"} /></a>
+                </Bounce>
+                <Bounce>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://bitcoinist.com/hakuna-matata-unleashes-aims-to-glorify-living/"}><Image className={"py-3"} width={150} src={"/assets/chainlink1.png"} /></a>
+                </Bounce>
+                <Bounce>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.investing.com/news/cryptocurrency-news/hakuna-matata--set-sights-on-simplifying-the-art-of-living-2708677"}><Image className={"py-3"} width={250} src={"/assets/bitmart.png"} /></a>
+                </Bounce>
+                <Bounce>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.investing.com/news/cryptocurrency-news/hakuna-matata--set-sights-on-simplifying-the-art-of-living-2708677"}><Image className={"py-3"} width={250} src={"/assets/binance.png"} /></a>
                 </Bounce>
               </div>
           </Col>
         </Row>
       </Container>
 
-      <Container id={"team"} className={"my-5"}>
-        <Row className={"px-1"}>
-          <Col>
-          <h3 className={"text-center"}>Meet our team</h3>
-          <p className={"lead text-center"}>Working on delivering the best products</p>
-          <Carousel
-            className={"px-2"}
-            swipeable={false}
-            responsive={responsive}>
-
-              <Bounce>
-                <Card className={"mx-2"} style={{borderRadius: "50px"}}>
-                  <Card.Img src={`${prefix}/assets/emmanuel.png`} width={"100%"} style={{borderRadius: "30px"}} />
-                  <Card.Body>
-                    <Card.Subtitle className={"text-center"}>CEO and Founder</Card.Subtitle>
-                    <Card.Title className={"text-center"}>Emmanuel Tunda</Card.Title>
-                    <Card.Link href={"https://www.linkedin.com/in/emmanuel-theman"} className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
-                  </Card.Body>
-                </Card>
-              </Bounce>
-              <Bounce>
-                <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
-                  <Card.Img src={`${prefix}/assets/brice.png`} width={"100%"} style={{borderRadius: "30px"}} />
-                  <Card.Body>
-                    <Card.Subtitle className={"text-center"}>Consultant</Card.Subtitle>
-                    <Card.Title className={"text-center"}>Brice Aminou</Card.Title>
-                    <Card.Link href={"https://www.linkedin.com/in/brice-aminou/"} className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
-                  </Card.Body>
-                </Card>
-              </Bounce>
-
-              <Bounce>
-                <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
-                  <Card.Img src={`${prefix}/assets/josh.png`} width={"100%"} style={{borderRadius: "30px"}} />
-                  <Card.Body>
-                    <Card.Subtitle className={"text-center"}>Consultant</Card.Subtitle>
-                    <Card.Title className={"text-center"}>Joshua Hyman</Card.Title>
-                    <Card.Link href={"https://www.linkedin.com/in/josh-h-54abbb8a/"} className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
-                  </Card.Body>
-                </Card>
-              </Bounce>
-              
-              <Bounce>
-                <Card className={"mx-2 p-2"} style={{borderRadius: "30px"}}>
-                  <Card.Img src={`${prefix}/assets/avatar1.png`} width={"100%"} style={{borderRadius: "30px"}} />
-                  <Card.Body>
-                    <Card.Subtitle className={"text-center"}>Advisor</Card.Subtitle>
-                    <Card.Title className={"text-center"}>Benedict Peters</Card.Title>
-                    <Card.Link href={"https://www.linkedin.com/in/benedict-peter-s-8a4484178/"} className={"d-flex justify-content-center"}><FaLinkedin style={{fontSize: "50px"}} /></Card.Link>
-                  </Card.Body>
-                </Card>
-              </Bounce>
-          </Carousel>
-          </Col>
-        </Row>
-      </Container>
-
+      
       <Container style={{backgroundColor: "#000", paddingTop: "100px", paddingBottom: "100px"}} fluid>
         <Row>
           <Col>
             <h3 id={"community"} className={"text-center text-white"}>Community</h3>
             <p className={"lead text-center text-white"}>Join our chat and follow us on Twitter</p>
             <div className={"text-center mb-5"}>
-              <Image src={`${prefix}/assets/logo1.png`} alt={"Hakuna Matata's Logo"} />
+              <Image src={`${prefix}/assets/logoMatata.png`} alt={"Hakuna Matata's Logo"} />
             </div>
             <div className={"d-flex justify-content-center"}>
               <Spin>
                 <SocialIcon className={"mx-1 text-center"} url="https://t.me/Matatacoin" network={"telegram"} />
               </Spin>
               <Spin>
-                <SocialIcon className={"mx-1"} url="https://twitter.com/HMatataOfficial" />
+                <SocialIcon className={"mx-1"} url="https://twitter.com/matatacoin" />
               </Spin>
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col className={"d-flex justify-content-center"}>
-            <Vimeo
-              video="657668142"
-              autoplay
-              className={"mt-5"}
-            />
-          </Col>
-        </Row>
+      
       </Container>
-      <Container className={"py-5"}>
-        <Row>
-          <Col>
-              <p className={"lead text-center"}>Audited by Solid Proof</p>
-              <div className={"text-center"}>
-                <a href="https://github.com/solidproof/audit-certificates/blob/main/Audit_Certificate_MATATA.png"><Image alt={"Solid proog logo"} width={150} src={"/assets/solidproof.png"} /></a>
-              </div>
-          </Col>
-        </Row>
-      </Container>
+    
 
-      <footer className={styles.footer}>
+      <footer className={styles.footer} style={{backgroundColor: "#000000",color:"#fff"}}>
         <a
           href="#home"
         >
-          Powered by Hakuna Matata
+          Powered by Matata Coin
         </a>
       </footer>
       <div>

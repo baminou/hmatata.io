@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Chivo', sans-serif !important;
+  background-color: black;
 }
 
 a {
@@ -31,42 +32,45 @@ a {
 }
 
 .btn-flat-primary {
-  background-color: #8C1BF6 !important;
+  background-color: #B98E37!important;
   color: white !important;
 }
 
 .btn-flat-primary:hover {
-  background-color: #f68c1b !important;
+  background-color: #B98E37 !important;
   border: 3px solid #fff !important;
 }
 
 .btn-flat-outline {
-  border: 3px solid #f68c1b !important;
+  border: 3px solid #B98E37 !important;
   color: white !important;
 }
 
 .btn-flat-outline:hover {
-  background-color: #f68c1b !important;
+  background-color: #B98E37 !important;
 }
 
 .btn-flat-outline-dark {
-  border: 3px solid #f68c1b !important;
-  color: black !important;
+  border: 3px solid #B98E37 !important;
+  color: #B98E37 !important;
 }
 
 .btn-flat-outline-dark:hover {
-  background-color: #f68c1b !important;
+  background-color: #B98E37 !important;
   color: white !important;
 }
 
 .feature-card {
-  border: 3px solid #f68c1b !important;
+  border: 3px solid #C6A148 !important;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #f68c1b !important;
+  background-color: #C6A148 !important;
   color: #fff;
   line-height: 150%;
 }
+/* .navbar {
+  opacity: 0.9;
+} */
 
 .nav-link {
   color: #fff !important;
@@ -74,18 +78,23 @@ a {
   padding: 10px  !important;
   margin-right: 5px;
   text-align: center;
+  
+ 
 }
 
+
 .nav-link:hover {
-  background-color:#f68c1b;
+  background-color:#C6A148;
+  
 }
 
 .navbar-toggler-icon {
-  border-color: #f68c1b !important;
+  border-color: #B98E37 !important;
+ 
 }
 
 
 .partners {
-  background-color: rgba(140, 27, 246, 0.6);
+  background-color: rgba(12, 6, 17, 0.6);
   color: #fff;
 }
