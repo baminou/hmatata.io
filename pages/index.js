@@ -142,7 +142,7 @@ export default function Home() {
         <ButtonGroup className="my-3">
           <a href="https://pancakeswap.finance/swap?outputCurrency=0xeEb97934F49E1Ef58FD29DF20d065a437D7C9f56"><Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Buy Now</Button></a>
           <a href="http://127.0.0.1:5500/matata/index.html"><Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Stake Now</Button></a>
-          <a href="http://127.0.0.1:5500/matata/lending/index.html"><Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Borrow Now</Button></a>
+          <a href="https://lending.matatacoin.com/"><Button className={"mx-2 rounded-button py-3 px-4"} variant="flat-primary" size={"lg"}>Borrow Now</Button></a>
          
  
         </ButtonGroup>
