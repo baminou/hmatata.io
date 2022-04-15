@@ -398,10 +398,10 @@ export default function Home() {
                   <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://eboost.net.au/"}><Image width={250} src={"/assets/eboost.png"} /></a>
                 </Bounce>
                 <Bounce>
-                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://bitcoinist.com/hakuna-matata-unleashes-aims-to-glorify-living/"}><Image className={"py-3"} width={150} src={"/assets/chainlink1.png"} /></a>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"#"}><Image className={"py-3"} width={150} src={"/assets/chainlink1.png"} /></a>
                 </Bounce>
                 <Bounce>
-                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.investing.com/news/cryptocurrency-news/hakuna-matata--set-sights-on-simplifying-the-art-of-living-2708677"}><Image className={"py-3"} width={250} src={"/assets/bitmart.png"} /></a>
+                  <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"#"}><Image className={"py-3"} width={250} src={"/assets/bitmart.png"} /></a>
                 </Bounce>
                 <Bounce>
                   <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.investing.com/news/cryptocurrency-news/hakuna-matata--set-sights-on-simplifying-the-art-of-living-2708677"}><Image className={"py-3"} width={250} src={"/assets/binance.png"} /></a>
