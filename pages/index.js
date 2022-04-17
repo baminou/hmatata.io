@@ -379,11 +379,7 @@ export default function Home() {
                 <Bounce>
                   <a className={"mx-3"} target={"_blank"} rel={"noreferrer"} href={"https://www.newsbtc.com/press-releases/hakuna-matata-set-sights-on-simplifying-the-art-of-living/"}><Image className={"py-3"} width={250} src={"/assets/newsbtc.png"} /></a>
                 </Bounce>
-              
-
-           
-
-              
+                
               </div>
           </Col>
         </Row>
