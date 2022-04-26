@@ -91,7 +91,7 @@ export default function Home() {
               className="d-flex"
               navbarScroll
             >
-              <Nav.Link href={`${prefix}/assets/whitepaper.pdf`} target='_blank' rel='noopener noreferrer'>White Paper</Nav.Link>
+              <Nav.Link href={`${prefix}/assets/mwhitepaper.pdf`} target='_blank' rel='noopener noreferrer'>White Paper</Nav.Link>
               <Nav.Link href="#features">Features</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#roadmap">Roadmap</Nav.Link>
